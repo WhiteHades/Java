@@ -59,5 +59,27 @@ public class arrays {
             }
             System.out.println("");
         }
+        System.out.println("");
+
+        // multiplying 2 matrices
+
+        int x[][] = { { 3, 4, 5 }, { 1, 1, 1 }, { 1, 1, 1 } };
+        int y[][] = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } };
+        int c[][] = new int[3][3];
+
+        for (int i = 0; i < x.length; i++) {
+            for (int j = 0; j < x[i].length; j++) {
+                c[i][j] = 0;
+                for (int k = 0; k < 3; k++) {
+                    c[i][j] = c[i][j] + (x[i][k] * y[k][j]);
+                }
+            }
+        }
+        for (int tr[] : c) {
+            for (int yt : tr) {
+                System.out.print(yt + "");
+            }
+            System.out.println("");
+        }
     }
 }
