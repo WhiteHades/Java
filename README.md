@@ -1,0 +1,1 @@
+A collection of codes, for my own personal development, written in Java.
