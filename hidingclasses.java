@@ -11,15 +11,17 @@ class rectangle {
     }
 
     public void setLength(int l) {
-        length = l;
+        if (l >= 0)
+            length = l;
     }
 
     public void setBreadth(int b) {
-        breadth = b;
+        if (b >= 0)
+            breadth = b;
     }
 
     public int area() {
-        return length * breadth;
+        return getLength() * getBreadth();
     }
 
     public int perimeter() {
