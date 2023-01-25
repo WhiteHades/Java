@@ -20,5 +20,11 @@ class Rectangle {
 }
 
 public class constructors {
+    public static void main(String[] args) {
 
+        Rectangle t = new Rectangle();
+        Rectangle r = new Rectangle(10, 4);
+        Rectangle s = new Rectangle(10);
+
+    }
 }
