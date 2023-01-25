@@ -33,11 +33,11 @@ class Subject {
     }
 
     // constructors
-    public Subject(String id, String n, int max, int obtain) {
+    public Subject(String id, String n, int obtain) {
         subID = id;
         name = n;
-        setMaxmarks(max);
         setMarksobtain(obtain);
+        // setMarksobtain(obtain);
     }
 
     boolean isQualified() {
@@ -46,5 +46,18 @@ class Subject {
 
     public String toString() {
         return "\nSubject ID: " + subID + "\nName: " + name + "\nMarks obtained: " + marksObtain;
+    }
+}
+
+public class arrayofobjects {
+    public static void main(String[] args) {
+        Subject subs[] = new Subject[3];
+        subs[0] = new Subject("s101", "DS", 100);
+        subs[1] = new Subject("s102", "Algoritms", 100);
+        subs[2] = new Subject("s103", "Operating System", 100);
+
+        for (Subject s : subs) {
+            System.out.println(s);
+        }
     }
 }
