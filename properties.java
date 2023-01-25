@@ -1,16 +1,20 @@
-class Rectangle {
-    private double length;
+class Student {
+    // read only property
 
-    public double getLength() {
-        return length;
-    }
+    private int roll;
 
-    public void setLength(double l) {
-        length = 1;
+    public int getRollNumber() {
+        return roll;
     }
 
 }
 
-public class properties {
+class producer {
+    // write only property
 
+    private int sharedData;
+
+    public void setData(int d) {
+        sharedData = d;
+    }
 }
