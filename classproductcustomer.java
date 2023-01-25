@@ -20,4 +20,18 @@ class Product {
         return qty;
     }
 
+    public void setPrice(double p) {
+        if (p >= 0) {
+            price = p;
+        }
+    }
+
+    public void setQty(double q) {
+        if (q >= 0) {
+            qty = q;
+        }
+    }
+
+    // constructor
+
 }
