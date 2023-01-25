@@ -36,5 +36,15 @@ class Subject {
     public Subject(String id, String n, int max, int obtain) {
         subID = id;
         name = n;
+        setMaxmarks(max);
+        setMarksobtain(obtain);
+    }
+
+    boolean isQualified() {
+        return marksObtain >= maxMarks / 10 * 4;
+    }
+
+    public String toString() {
+        return "\nSubject ID: " + subID + "\nName: " + name + "\nMarks obtained: " + marksObtain;
     }
 }
