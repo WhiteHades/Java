@@ -49,6 +49,33 @@ class Subject {
     }
 }
 
+class Student {
+    private String rollNo;
+    private String name;
+    private String dept;
+    private String subjects;
+
+    public String getRollNo() {
+        return rollNo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDept() {
+        return dept;
+    }
+
+    public String getSubjects() {
+        return subjects;
+    }
+
+    public void setSubjects(String subject) {
+        subjects = subject;
+    }
+}
+
 public class arrayofobjects {
     public static void main(String[] args) {
         Subject subs[] = new Subject[3];
