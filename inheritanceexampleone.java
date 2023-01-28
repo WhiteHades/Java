@@ -10,6 +10,6 @@ class Child extends Parent {
 
 public class inheritanceexampleone {
     public static void main(String args[]) {
-
+        Parent p = new Parent();
     }
 }
