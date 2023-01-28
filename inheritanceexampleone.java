@@ -1,5 +1,7 @@
-class Parent{
-    System.out.println("Parent Constructor");
+class Parent {
+    public Parent() {
+        System.out.println("Parent Constructor");
+    }
 }
 
 class Child extends Parent {
