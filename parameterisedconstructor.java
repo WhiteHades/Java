@@ -48,6 +48,11 @@ class Cuboid extends Rectangle {
         height = h;
     }
 
+    Cuboid(int l, int b, int h) {
+        super(l, b);
+        height = h;
+    }
+
     int volume() {
         return length * breadth * height;
     }
@@ -57,7 +62,10 @@ public class parameterisedconstructor {
     public static void main(String args[]) {
         // Child c = new Child();
         Child c = new Child(10, 20);
-        System.out.println("\n");
+        System.out.println();
+
+        Cuboid cub = new Cuboid(5, 3, 10);
+        System.out.println(cub.volume());
 
     }
 }
