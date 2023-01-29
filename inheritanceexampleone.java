@@ -10,10 +10,17 @@ class Child extends Parent {
     }
 }
 
+class GrandChild extends Child {
+    public GrandChild() {
+        System.out.println("Grand Child Constructor");
+    }
+}
+
 public class inheritanceexampleone {
     public static void main(String args[]) {
         // Parent p = new Parent();
-        Child c = new Child();
+        // Child c = new Child();
+        GrandChild g = new GrandChild();
 
     }
 }
