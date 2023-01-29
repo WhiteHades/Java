@@ -23,9 +23,41 @@ class Child extends Parent {
     }
 }
 
+class Rectangle {
+    int length;
+    int breadth;
+
+    Rectangle() {
+        length = breadth = 1;
+    }
+
+    Rectangle(int a, int b) {
+        length = a;
+        breadth = b;
+    }
+}
+
+class Cuboid extends Rectangle {
+    int height;
+
+    Cuboid() {
+        height = 1;
+    }
+
+    Cuboid(int h) {
+        height = h;
+    }
+
+    int volume() {
+        return length * breadth * height;
+    }
+}
+
 public class parameterisedconstructor {
     public static void main(String args[]) {
         // Child c = new Child();
         Child c = new Child(10, 20);
+        System.out.println("\n");
+
     }
 }
