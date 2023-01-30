@@ -59,6 +59,6 @@ public class conditionalstatement {
                 System.out.println("Network");
                 break;
         }
+        close(scan);
     }
-
 }
