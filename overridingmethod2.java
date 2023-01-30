@@ -35,7 +35,7 @@ public class overridingmethod2 {
         tnew.switchON();
         tnew.browse();
 
-        TV t2 = new smartTV();
+        // TV t2 = new smartTV(); will work
         // smartTV t2 = new TV(); not allowed
     }
 }

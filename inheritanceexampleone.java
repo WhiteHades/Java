@@ -21,6 +21,7 @@ public class inheritanceexampleone {
         // Parent p = new Parent();
         // Child c = new Child();
         GrandChild g = new GrandChild();
+        g.toString();// don't need but still gave
 
     }
 }
