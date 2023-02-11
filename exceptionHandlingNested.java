@@ -7,7 +7,8 @@ public class exceptionHandlingNested {
                 int r = a[0] / a[1];
                 System.out.println(r);
             } catch (ArithmeticException e) {
-                System.out.println(e);
+                System.out.println(e);// automatically ToString method will
+                // be called
             }
             System.out.println(a[10]);
 
