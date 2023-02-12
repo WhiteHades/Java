@@ -1,4 +1,11 @@
 public class ThrowAndThrows {
+
+    class NegativeDimensionException extends Exception {
+        public String toString() {
+            return "Dimensions of a rectangle cannot be negative";
+        }
+    }
+
     static int meth1() {
         return 10 / 0;// unchecked exception
     }
@@ -18,9 +25,20 @@ public class ThrowAndThrows {
         return l * b;
     }
 
+    // static int area2(int l, int b) throws NegativeDimensionException {
+    // if (l < 0 || b < 0) {
+    // throw new NegativeDimensionException();
+    // }
+    // return l * b;
+    // }
+
     static void meth4() throws Exception {
         System.out.println("Area is " + area(-10, 5));
     }
+
+    // static void meth5() throws NegativeDimensionException {
+    // System.out.println("Area is " + area2(-9, 8));
+    // }
 
     public static void main(String[] args) throws Exception {
         // meth3();
